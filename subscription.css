@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: url('./assets/bg.jpg') no-repeat center center / cover;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subscription-container {
+    width: 90%;
+    max-width: 1000px;
+    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    border-radius: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+.subscription-container h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.plans {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.plan-card {
+    flex: 1;
+    min-width: 260px;
+    max-width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    transition: transform 0.4s ease;
+}
+
+.plan-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px #fff;
+}
+
+.plan-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.plan-card ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.plan-card ul li {
+    margin: 8px 0;
+    font-size: 1em;
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+    background: linear-gradient(45deg, #ff512f, #dd2476);
+    color: white;
+    transition: background 0.4s ease;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #dd2476, #ff512f);
+}
